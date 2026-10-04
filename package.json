@@ -1,0 +1,15 @@
+{
+  "name": "com.johannhotzel.manifoldcsg",
+  "version": "1.0.0",
+  "displayName": "ManifoldCSG for Unity",
+  "description": "Boolean mesh operations (subtract, union, intersect) at runtime, powered by the Manifold library. Objects can be changed repeatedly, e.g. by a weapon that cuts a hole with every hit.",
+  "unity": "6000.0",
+  "license": "MIT",
+  "author": {
+    "name": "Johann"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohannHotzel/manifold-csg-unity.git"
+  }
+}

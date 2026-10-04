@@ -14,12 +14,28 @@ repeatedly, e.g. by a weapon that cuts a hole with every hit. The geometry is co
 
 ## Requirements
 
-- Unity 6 (tested with 6000.5). The demos use URP and the Input System package.
+- Unity 6 (tested with 6000.5). The demos use URP and the Input System package; without the Input System
+  package their scripts are not compiled.
 - macOS (arm64 and x86_64) and Windows x64, Editor and Standalone. No Linux, mobile or WebGL library.
-- Get this repository with git (`git clone`). If it is downloaded as a ZIP file instead, macOS may block
-  the native library with a security warning.
 - Meshes must be closed (every edge shared by exactly two triangles) and have Read/Write enabled.
   Unity's Cube, Sphere, Cylinder and Capsule meshes work, the Plane does not.
+
+## Installation
+
+Either through the Package Manager: *Window > Package Manager > + > Install package from git URL*, then
+
+```
+https://github.com/JohannHotzel/manifold-csg-unity.git
+```
+
+Or clone the repository into the `Assets` folder of your project:
+
+```bash
+git clone https://github.com/JohannHotzel/manifold-csg-unity.git Assets/ManifoldCSG
+```
+
+Use git either way. If the repository is downloaded as a ZIP file instead, macOS may block the native
+library with a security warning.
 
 ## Usage
 
@@ -164,7 +180,7 @@ Profiler markers: `CsgBody.Apply`, `CsgBody.UpdateMesh`, `CsgBody.UpdateCollider
 
 ## Samples
 
-In `Demo/`:
+In `Demo/` (assembly `ManifoldCSG.Demo`, compiled only with the Input System package):
 
 - `CsgDemo`: Union, Subtract and Intersect, each applied every frame with a moving sphere.
 - `CsgCarving`: click to cut a tool shape out of an object. Right mouse button orbits, wheel zooms.
@@ -181,6 +197,7 @@ The shooter GIF is from a separate project and not included.
 | `Demo/` | Sample scenes, scripts, materials, shapes |
 | `Tests/` | EditMode tests |
 | `Documentation~/` | Images for this README (not imported by Unity) |
+| `package.json` | Package manifest for the Package Manager |
 
 ## License
 

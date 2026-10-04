@@ -19,16 +19,6 @@ repeatedly, e.g. by a weapon that cuts a hole with every hit. The geometry is co
 - Meshes must be closed (every edge shared by exactly two triangles) and have Read/Write enabled.
   Unity's Cube, Sphere, Cylinder and Capsule meshes work, the Plane does not.
 
-## Installation
-
-Clone or copy this repository into your project as `Assets/ManifoldCSG`:
-
-```
-git clone https://github.com/JohannHotzel/manifold-csg-unity.git Assets/ManifoldCSG
-```
-
-Namespace and assembly: `ManifoldCSG`.
-
 ## Usage
 
 1. Add a `CsgBody` component to the object you want to change.

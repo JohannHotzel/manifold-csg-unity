@@ -16,6 +16,8 @@ repeatedly, e.g. by a weapon that cuts a hole with every hit. The geometry is co
 
 - Unity 6 (tested with 6000.5). The demos use URP and the Input System package.
 - macOS (arm64 and x86_64) and Windows x64, Editor and Standalone. No Linux, mobile or WebGL library.
+- Get this repository with git (`git clone`). If it is downloaded as a ZIP file instead, macOS may block
+  the native library with a security warning.
 - Meshes must be closed (every edge shared by exactly two triangles) and have Read/Write enabled.
   Unity's Cube, Sphere, Cylinder and Capsule meshes work, the Plane does not.
 

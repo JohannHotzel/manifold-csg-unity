@@ -185,6 +185,10 @@ In `Demo/` (assembly `ManifoldCSG.Demo`, compiled only with the Input System pac
 - `CsgDemo`: Union, Subtract and Intersect, each applied every frame with a moving sphere.
 - `CsgCarving`: click to cut a tool shape out of an object. Right mouse button orbits, wheel zooms.
 
+Packages installed with the Package Manager are read-only, so Unity cannot open these scenes there.
+Copy a scene into `Assets` (e.g. duplicate it with Ctrl+D or drag it there) and open the copy. This will
+be fixed in a later version.
+
 The shooter GIF is from a separate project and not included.
 
 ## Folder structure
